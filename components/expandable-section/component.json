@@ -6,7 +6,7 @@
 	"SLDS-component-path": "/components/expandable-section",
 	"site-stories": [
 		{
-			"heading": "Deault",
+			"heading": "Default",
 			"path": "/__examples__/default.jsx"
 		},
 		{

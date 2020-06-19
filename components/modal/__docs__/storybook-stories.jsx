@@ -7,7 +7,6 @@ import IconSettings from '../../icon-settings';
 import { MODAL } from '../../../utilities/constants';
 import Modal from '../../modal';
 import Combobox from '../../combobox/';
-import Timepicker from '../../time-picker';
 import Datepicker from '../../date-picker';
 import Button from '../../button';
 import ComboboxBase from '../../combobox/__examples__/base';
@@ -147,14 +146,6 @@ const modalContent = (
 				options={leadSourceTypes}
 				selection={[leadSourceTypes[1]]}
 				variant="readonly"
-			/>
-		</div>
-
-		<div className="slds-m-bottom_large">
-			<Timepicker
-				onDateChange={() => {
-					action('time is selected');
-				}}
 			/>
 		</div>
 

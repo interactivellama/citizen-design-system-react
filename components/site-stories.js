@@ -34,12 +34,6 @@ const documentationSiteLiveExamples = {
 			path: require('raw-loader!@salesforce/design-system-react/components/alert/__examples__/dismissable.jsx'),
 		},
 	],
-	'app-launcher': [
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/app-launcher/__examples__/default.jsx'),
-		},
-	],
 	avatar: [
 		{
 			heading: 'Base',
@@ -74,28 +68,6 @@ const documentationSiteLiveExamples = {
 		{
 			heading: 'With Icon',
 			path: require('raw-loader!@salesforce/design-system-react/components/badge/__examples__/with-icon.jsx'),
-		},
-	],
-	'brand-band': [
-		{
-			heading: 'Lightning Blue',
-			path: require('raw-loader!@salesforce/design-system-react/components/brand-band/__examples__/lightning-blue-theme.jsx'),
-		},
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/brand-band/__examples__/default.jsx'),
-		},
-		{
-			heading: 'Small',
-			path: require('raw-loader!@salesforce/design-system-react/components/brand-band/__examples__/small.jsx'),
-		},
-		{
-			heading: 'large',
-			path: require('raw-loader!@salesforce/design-system-react/components/brand-band/__examples__/large.jsx'),
-		},
-		{
-			heading: 'No Image',
-			path: require('raw-loader!@salesforce/design-system-react/components/brand-band/__examples__/no-image.jsx'),
 		},
 	],
 	breadcrumb: [
@@ -176,20 +148,6 @@ const documentationSiteLiveExamples = {
 		{
 			heading: 'Card with Data Table',
 			path: require('raw-loader!@salesforce/design-system-react/components/card/__examples__/related-list-with-table.jsx'),
-		},
-	],
-	carousel: [
-		{
-			heading: 'Three Items',
-			path: require('raw-loader!@salesforce/design-system-react/components/carousel/__examples__/three-items.jsx'),
-		},
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/carousel/__examples__/default.jsx'),
-		},
-		{
-			heading: 'With Navigation',
-			path: require('raw-loader!@salesforce/design-system-react/components/carousel/__examples__/default-with-navigation.jsx'),
 		},
 	],
 	checkbox: [
@@ -304,10 +262,6 @@ const documentationSiteLiveExamples = {
 			path: require('raw-loader!@salesforce/design-system-react/components/data-table/__examples__/fixed-header.jsx'),
 		},
 		{
-			heading: 'Advanced: Joined with Page Header',
-			path: require('raw-loader!@salesforce/design-system-react/components/data-table/__examples__/joined-with-page-header.jsx'),
-		},
-		{
 			heading: 'Custom Classes',
 			path: require('raw-loader!@salesforce/design-system-react/components/data-table/__examples__/custom-classes.jsx'),
 		},
@@ -318,39 +272,9 @@ const documentationSiteLiveExamples = {
 			path: require('raw-loader!@salesforce/design-system-react/components/date-picker/__examples__/default.jsx'),
 		},
 	],
-	'dynamic-icon': [
-		{
-			heading: 'Ellie',
-			path: require('raw-loader!@salesforce/design-system-react/components/dynamic-icon/__examples__/ellie.jsx'),
-		},
-		{
-			heading: 'Eq',
-			path: require('raw-loader!@salesforce/design-system-react/components/dynamic-icon/__examples__/eq.jsx'),
-		},
-		{
-			heading: 'Score',
-			path: require('raw-loader!@salesforce/design-system-react/components/dynamic-icon/__examples__/score.jsx'),
-		},
-		{
-			heading: 'Strength',
-			path: require('raw-loader!@salesforce/design-system-react/components/dynamic-icon/__examples__/strength.jsx'),
-		},
-		{
-			heading: 'Trend',
-			path: require('raw-loader!@salesforce/design-system-react/components/dynamic-icon/__examples__/trend.jsx'),
-		},
-		{
-			heading: 'Typing',
-			path: require('raw-loader!@salesforce/design-system-react/components/dynamic-icon/__examples__/typing.jsx'),
-		},
-		{
-			heading: 'Waffle',
-			path: require('raw-loader!@salesforce/design-system-react/components/dynamic-icon/__examples__/waffle.jsx'),
-		},
-	],
 	'expandable-section': [
 		{
-			heading: 'Deault',
+			heading: 'Default',
 			path: require('raw-loader!@salesforce/design-system-react/components/expandable-section/__examples__/default.jsx'),
 		},
 		{
@@ -398,36 +322,6 @@ const documentationSiteLiveExamples = {
 			path: require('raw-loader!@salesforce/design-system-react/components/files/__examples__/actions.jsx'),
 		},
 	],
-	filter: [
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/filter/__examples__/default.jsx'),
-		},
-		{
-			heading: 'New',
-			path: require('raw-loader!@salesforce/design-system-react/components/filter/__examples__/new.jsx'),
-		},
-		{
-			heading: 'Error',
-			path: require('raw-loader!@salesforce/design-system-react/components/filter/__examples__/error.jsx'),
-		},
-		{
-			heading: 'Locked',
-			path: require('raw-loader!@salesforce/design-system-react/components/filter/__examples__/locked.jsx'),
-		},
-	],
-	'global-header': [
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/global-header/__examples__/default.jsx'),
-		},
-	],
-	'global-navigation-bar': [
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/global-navigation-bar/__examples__/default.jsx'),
-		},
-	],
 	icon: [
 		{
 			heading: 'Category Options',
@@ -470,12 +364,6 @@ const documentationSiteLiveExamples = {
 		{
 			heading: 'Counter',
 			path: require('raw-loader!@salesforce/design-system-react/components/input/__examples__/counter-input.jsx'),
-		},
-	],
-	'location-map': [
-		{
-			heading: 'Multiple Locations',
-			path: require('raw-loader!@salesforce/design-system-react/components/location-map/__examples__/multiple-locations.jsx'),
 		},
 	],
 	'media-object': [
@@ -530,38 +418,6 @@ const documentationSiteLiveExamples = {
 		{
 			heading: 'Various sizes',
 			path: require('raw-loader!@salesforce/design-system-react/components/modal/__examples__/sizes.jsx'),
-		},
-	],
-	'page-header': [
-		{
-			heading: 'Record Home',
-			path: require('raw-loader!@salesforce/design-system-react/components/page-header/__examples__/record-home.jsx'),
-		},
-		{
-			heading: 'Object Home',
-			path: require('raw-loader!@salesforce/design-system-react/components/page-header/__examples__/object-home.jsx'),
-		},
-		{
-			heading: 'Related list',
-			path: require('raw-loader!@salesforce/design-system-react/components/page-header/__examples__/related-list.jsx'),
-		},
-		{
-			heading: 'Setup',
-			path: require('raw-loader!@salesforce/design-system-react/components/page-header/__examples__/setup.jsx'),
-		},
-	],
-	panel: [
-		{
-			heading: 'Filtering',
-			path: require('raw-loader!@salesforce/design-system-react/components/panel/__examples__/filtering.jsx'),
-		},
-		{
-			heading: 'Filtering: Locked',
-			path: require('raw-loader!@salesforce/design-system-react/components/panel/__examples__/filtering-locked.jsx'),
-		},
-		{
-			heading: 'Filtering: Error',
-			path: require('raw-loader!@salesforce/design-system-react/components/panel/__examples__/filtering-error.jsx'),
 		},
 	],
 	'pill-container': [
@@ -736,24 +592,6 @@ const documentationSiteLiveExamples = {
 			path: require('raw-loader!@salesforce/design-system-react/components/scoped-notification/__examples__/custom-icon.jsx'),
 		},
 	],
-	'setup-assistant': [
-		{
-			heading: 'Base',
-			path: require('raw-loader!@salesforce/design-system-react/components/setup-assistant/__examples__/base.jsx'),
-		},
-		{
-			heading: 'Step Progress Indicator',
-			path: require('raw-loader!@salesforce/design-system-react/components/setup-assistant/__examples__/step-progress.jsx'),
-		},
-		{
-			heading: 'Expandable Steps',
-			path: require('raw-loader!@salesforce/design-system-react/components/setup-assistant/__examples__/hub-expandable-steps.jsx'),
-		},
-		{
-			heading: 'With Card',
-			path: require('raw-loader!@salesforce/design-system-react/components/setup-assistant/__examples__/card.jsx'),
-		},
-	],
 	slider: [
 		{
 			heading: 'Base',
@@ -782,24 +620,6 @@ const documentationSiteLiveExamples = {
 			path: require('raw-loader!@salesforce/design-system-react/components/spinner/__examples__/default.jsx'),
 		},
 	],
-	'split-view': [
-		{
-			heading: 'Base',
-			path: require('raw-loader!@salesforce/design-system-react/components/split-view/__examples__/base.jsx'),
-		},
-		{
-			heading: 'Multiple',
-			path: require('raw-loader!@salesforce/design-system-react/components/split-view/__examples__/base-multiple.jsx'),
-		},
-		{
-			heading: 'With External State',
-			path: require('raw-loader!@salesforce/design-system-react/components/split-view/__examples__/external-state.jsx'),
-		},
-		{
-			heading: 'Custom Items List',
-			path: require('raw-loader!@salesforce/design-system-react/components/split-view/__examples__/custom-items-list.jsx'),
-		},
-	],
 	tabs: [
 		{
 			heading: 'Default',
@@ -822,12 +642,6 @@ const documentationSiteLiveExamples = {
 		{
 			heading: 'Disabled',
 			path: require('raw-loader!@salesforce/design-system-react/components/textarea/__examples__/disabled.jsx'),
-		},
-	],
-	'time-picker': [
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/time-picker/__examples__/default.jsx'),
 		},
 	],
 	toast: [
@@ -874,18 +688,6 @@ const documentationSiteLiveExamples = {
 		{
 			heading: 'Default',
 			path: require('raw-loader!@salesforce/design-system-react/components/tree/__examples__/default.jsx'),
-		},
-	],
-	'trial-bar': [
-		{
-			heading: 'Base',
-			path: require('raw-loader!@salesforce/design-system-react/components/trial-bar/__examples__/default.jsx'),
-		},
-	],
-	'vertical-navigation': [
-		{
-			heading: 'Default',
-			path: require('raw-loader!@salesforce/design-system-react/components/vertical-navigation/__examples__/default.jsx'),
 		},
 	],
 	'visual-picker': [

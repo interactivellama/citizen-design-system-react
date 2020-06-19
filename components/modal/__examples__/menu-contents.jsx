@@ -3,7 +3,6 @@ import React from 'react';
 import IconSettings from '~/components/icon-settings';
 import Modal from '~/components/modal'; // `~` is replaced with design-system-react at runtime
 import Button from '~/components/button';
-import Lookup from '~/components/lookup';
 import Combobox from '~/components/combobox';
 
 const leadSourceOptions = [
@@ -80,31 +79,6 @@ class Example extends React.Component {
 										placeholder="Enter description"
 									/>
 								</div>
-							</div>
-							<div className="slds-form-element slds-m-bottom_large">
-								<Lookup
-									emptyMessage="No items found"
-									hasError={false}
-									label="Account"
-									onChange={(newValue) => {
-										console.log('New search term: ', newValue);
-									}}
-									onSelect={(item) => {
-										console.log(item, ' Selected');
-									}}
-									options={[
-										{ type: 'section', label: 'SECTION 1' },
-										{ label: "Paddy's Pub" },
-										{ label: 'Tyrell Corp' },
-										{ type: 'section', label: 'SECTION 2' },
-										{ label: 'Paper St. Soap Company' },
-										{ label: 'Nakatomi Investments' },
-										{ label: 'Acme Landscaping' },
-										{ type: 'section', label: 'SECTION 3' },
-										{ label: 'Acme Construction' },
-									]}
-									sectionDividerRenderer={Lookup.DefaultSectionDivider}
-								/>
 							</div>
 							<div className="slds-m-bottom_large">
 								<Combobox

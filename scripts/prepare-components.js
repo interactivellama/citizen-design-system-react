@@ -124,15 +124,11 @@ configFiles.forEach((config) => {
 	// Add config items to indexFileRequirements
 	if (config.component && config.classKey) {
 		indexFileRequirements[`${config.classKey}`] = `./${config.component}`;
-		indexFileRequirements[`SLDS${config.classKey}`] = `./${config.component}`;
 	}
 	if (config.dependencies && config.dependencies.length > 0) {
 		config.dependencies.forEach((dependency) => {
 			if (config.component && dependency.component && dependency.classKey) {
 				indexFileRequirements[`${dependency.classKey}`] = `./${
-					config.component
-				}/${dependency.component}`;
-				indexFileRequirements[`SLDS${dependency.classKey}`] = `./${
 					config.component
 				}/${dependency.component}`;
 			}

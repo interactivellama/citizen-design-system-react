@@ -15,7 +15,6 @@ import BasicFluidNoRowHover from '../__examples__/basic-fluid-no-row-hover';
 import BasicFluidStriped from '../__examples__/basic-fluid-striped';
 import FixedHeader from '../__examples__/fixed-header';
 import FixedHeaderHorizontalScroller from '../__examples__/fixed-header-horizontal-scrolling';
-import JoinedWithPageHeader from '../__examples__/joined-with-page-header';
 import CustomClasses from '../__examples__/custom-classes';
 
 storiesOf(DATA_TABLE, module)
@@ -42,5 +41,4 @@ storiesOf(DATA_TABLE, module)
 	.add('Fixed Header Horizontal Scrolling', () => (
 		<FixedHeaderHorizontalScroller />
 	))
-	.add('Joined with Page Header', () => <JoinedWithPageHeader />)
 	.add('Custom Classes', () => <CustomClasses />);

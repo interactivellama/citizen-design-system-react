@@ -13,7 +13,6 @@
 		"dist": "scripts/dist.sh",
 		"heroku-prebuild": "./scripts/heroku-prebuild.sh",
 		"heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production; ./scripts/heroku-postbuild.sh",
-		"icons": "npx babel-node scripts/inline-icons.js",
 		"link": "./scripts/npm-link.sh",
 		"lint": "npx concurrently \"npm:lint:style\" \"npm:lint:quality\"",
 		"lint:docs": "npx prettylint \"*.md\"",
@@ -276,34 +275,6 @@
 			"url-slug": "alerts"
 		},
 		{
-			"component": "app-launcher",
-			"status": "prod",
-			"display-name": "App Launcher",
-			"classKey": "AppLauncher",
-			"SLDS-component-path": "/components/app-launcher",
-			"dependencies": [
-				{
-					"component": "expandable-section",
-					"classKey": "AppLauncherExpandableSection"
-				},
-				{
-					"component": "link",
-					"classKey": "AppLauncherLink"
-				},
-				{
-					"component": "tile",
-					"classKey": "AppLauncherTile"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				}
-			],
-			"url-slug": "app-launcher"
-		},
-		{
 			"component": "avatar",
 			"status": "prod",
 			"display-name": "Avatars",
@@ -358,40 +329,6 @@
 				}
 			],
 			"url-slug": "badges"
-		},
-		{
-			"component": "brand-band",
-			"status": "prod",
-			"display-name": "Brand Band",
-			"classKey": "BrandBand",
-			"last-accessibility-review": {
-				"date-iso-8601": "2018/08/27",
-				"commit-sha": "aef31ce8daf993b59ca94c656c5efd9f2e3266f7"
-			},
-			"SLDS-component-path": "/components/brand-band",
-			"site-stories": [
-				{
-					"heading": "Lightning Blue",
-					"path": "/__examples__/lightning-blue-theme.jsx"
-				},
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				},
-				{
-					"heading": "Small",
-					"path": "/__examples__/small.jsx"
-				},
-				{
-					"heading": "large",
-					"path": "/__examples__/large.jsx"
-				},
-				{
-					"heading": "No Image",
-					"path": "/__examples__/no-image.jsx"
-				}
-			],
-			"url-slug": "brand-band"
 		},
 		{
 			"component": "breadcrumb",
@@ -560,28 +497,6 @@
 				}
 			],
 			"url-slug": "cards"
-		},
-		{
-			"component": "carousel",
-			"status": "prod",
-			"display-name": "Carousel",
-			"classKey": "Carousel",
-			"SLDS-component-path": "/components/carousel",
-			"site-stories": [
-				{
-					"heading": "Three Items",
-					"path": "/__examples__/three-items.jsx"
-				},
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				},
-				{
-					"heading": "With Navigation",
-					"path": "/__examples__/default-with-navigation.jsx"
-				}
-			],
-			"url-slug": "carousel"
 		},
 		{
 			"component": "checkbox",
@@ -756,10 +671,6 @@
 					"path": "/__examples__/fixed-header.jsx"
 				},
 				{
-					"heading": "Advanced: Joined with Page Header",
-					"path": "/__examples__/joined-with-page-header.jsx"
-				},
-				{
 					"heading": "Custom Classes",
 					"path": "/__examples__/custom-classes.jsx"
 				}
@@ -785,44 +696,6 @@
 			"url-slug": "date-pickers"
 		},
 		{
-			"component": "dynamic-icon",
-			"status": "prod",
-			"display-name": "Dynamic Icon",
-			"classKey": "DynamicIcon",
-			"SLDS-component-path": "/components/dynamic-icon",
-			"site-stories": [
-				{
-					"heading": "Ellie",
-					"path": "/__examples__/ellie.jsx"
-				},
-				{
-					"heading": "Eq",
-					"path": "/__examples__/eq.jsx"
-				},
-				{
-					"heading": "Score",
-					"path": "/__examples__/score.jsx"
-				},
-				{
-					"heading": "Strength",
-					"path": "/__examples__/strength.jsx"
-				},
-				{
-					"heading": "Trend",
-					"path": "/__examples__/trend.jsx"
-				},
-				{
-					"heading": "Typing",
-					"path": "/__examples__/typing.jsx"
-				},
-				{
-					"heading": "Waffle",
-					"path": "/__examples__/waffle.jsx"
-				}
-			],
-			"url-slug": "dynamic-icon"
-		},
-		{
 			"component": "expandable-section",
 			"status": "prod",
 			"display-name": "Expandable Section",
@@ -830,7 +703,7 @@
 			"SLDS-component-path": "/components/expandable-section",
 			"site-stories": [
 				{
-					"heading": "Deault",
+					"heading": "Default",
 					"path": "/__examples__/default.jsx"
 				},
 				{
@@ -921,116 +794,6 @@
 			"url-slug": "files"
 		},
 		{
-			"component": "filter",
-			"status": "prod",
-			"display-name": "Filters",
-			"classKey": "Filter",
-			"SLDS-component-path": "/components/filter",
-			"site-stories": [
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				},
-				{
-					"heading": "New",
-					"path": "/__examples__/new.jsx"
-				},
-				{
-					"heading": "Error",
-					"path": "/__examples__/error.jsx"
-				},
-				{
-					"heading": "Locked",
-					"path": "/__examples__/locked.jsx"
-				}
-			],
-			"url-slug": "filters"
-		},
-		{
-			"component": "global-header",
-			"status": "prod",
-			"display-name": "Global Header",
-			"classKey": "GlobalHeader",
-			"SLDS-component-path": "/components/global-header#flavor-base",
-			"dependencies": [
-				{
-					"component": "favorites",
-					"classKey": "GlobalHeaderFavorites"
-				},
-				{
-					"component": "help",
-					"classKey": "GlobalHeaderHelp"
-				},
-				{
-					"component": "notifications",
-					"classKey": "GlobalHeaderNotifications"
-				},
-				{
-					"component": "profile",
-					"classKey": "GlobalHeaderProfile"
-				},
-				{
-					"component": "search",
-					"classKey": "GlobalHeaderSearch"
-				},
-				{
-					"component": "setup",
-					"classKey": "GlobalHeaderSetup"
-				},
-				{
-					"component": "task",
-					"classKey": "GlobalHeaderTask"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				}
-			],
-			"url-slug": "global-headers"
-		},
-		{
-			"component": "global-navigation-bar",
-			"status": "prod",
-			"display-name": "Global Navigation Bar",
-			"classKey": "GlobalNavigationBar",
-			"last-accessibility-review": {
-				"date-iso-8601": "2017/05/02",
-				"commit-sha": "ad6b6c6523ee21cada11be5f7ea4d99abc530726"
-			},
-			"SLDS-component-path": "/components/global-navigation",
-			"dependencies": [
-				{
-					"component": "button",
-					"classKey": "GlobalNavigationBarButton"
-				},
-				{
-					"component": "dropdown",
-					"classKey": "GlobalNavigationBarDropdown"
-				},
-				{
-					"component": "label",
-					"classKey": "GlobalNavigationBarLabel"
-				},
-				{
-					"component": "link",
-					"classKey": "GlobalNavigationBarLink"
-				},
-				{
-					"component": "region",
-					"classKey": "GlobalNavigationBarRegion"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				}
-			],
-			"url-slug": "global-navigation-bar"
-		},
-		{
 			"component": "icon-settings",
 			"status": "prod",
 			"display-name": "Icon Settings",
@@ -1110,20 +873,6 @@
 				}
 			],
 			"url-slug": "inputs"
-		},
-		{
-			"component": "location-map",
-			"status": "prod",
-			"display-name": "Location Map",
-			"classKey": "LocationMap",
-			"SLDS-component-path": "/components/location-map",
-			"site-stories": [
-				{
-					"heading": "Multiple Locations",
-					"path": "/__examples__/multiple-locations.jsx"
-				}
-			],
-			"url-slug": "location-map"
 		},
 		{
 			"component": "media-object",
@@ -1216,74 +965,6 @@
 				}
 			],
 			"url-slug": "modals"
-		},
-		{
-			"component": "page-header",
-			"status": "prod",
-			"display-name": "Page Headers",
-			"classKey": "PageHeader",
-			"SLDS-component-path": "/components/page-headers",
-			"dependencies": [
-				{
-					"component": "control",
-					"classKey": "PageHeaderControl"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Record Home",
-					"path": "/__examples__/record-home.jsx"
-				},
-				{
-					"heading": "Object Home",
-					"path": "/__examples__/object-home.jsx"
-				},
-				{
-					"heading": "Related list",
-					"path": "/__examples__/related-list.jsx"
-				},
-				{
-					"heading": "Setup",
-					"path": "/__examples__/setup.jsx"
-				}
-			],
-			"url-slug": "page-headers"
-		},
-		{
-			"component": "panel",
-			"status": "prod",
-			"display-name": "Panels",
-			"classKey": "Panel",
-			"SLDS-component-path": "/components/panels",
-			"dependencies": [
-				{
-					"component": "filtering/group",
-					"classKey": "PanelFilterGroup"
-				},
-				{
-					"component": "filtering/list-heading",
-					"classKey": "PanelFilterListHeading"
-				},
-				{
-					"component": "filtering/list",
-					"classKey": "PanelFilterList"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Filtering",
-					"path": "/__examples__/filtering.jsx"
-				},
-				{
-					"heading": "Filtering: Locked",
-					"path": "/__examples__/filtering-locked.jsx"
-				},
-				{
-					"heading": "Filtering: Error",
-					"path": "/__examples__/filtering-error.jsx"
-				}
-			],
-			"url-slug": "panels"
 		},
 		{
 			"component": "pill-container",
@@ -1570,38 +1251,6 @@
 			"url-slug": "scoped-notifications"
 		},
 		{
-			"component": "setup-assistant",
-			"status": "prod",
-			"display-name": "Setup Assistant",
-			"classKey": "SetupAssistant",
-			"SLDS-component-path": "/components/setup-assistant",
-			"dependencies": [
-				{
-					"component": "step",
-					"classKey": "SetupAssistantStep"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Base",
-					"path": "/__examples__/base.jsx"
-				},
-				{
-					"heading": "Step Progress Indicator",
-					"path": "/__examples__/step-progress.jsx"
-				},
-				{
-					"heading": "Expandable Steps",
-					"path": "/__examples__/hub-expandable-steps.jsx"
-				},
-				{
-					"heading": "With Card",
-					"path": "/__examples__/card.jsx"
-				}
-			],
-			"url-slug": "setup-assistant"
-		},
-		{
 			"component": "slider",
 			"status": "prod",
 			"display-name": "Slider",
@@ -1644,50 +1293,6 @@
 				}
 			],
 			"url-slug": "spinners"
-		},
-		{
-			"component": "split-view",
-			"status": "prod",
-			"display-name": "Split View",
-			"classKey": "SplitView",
-			"last-accessibility-review": {
-				"date-iso-8601": "2018/01/18",
-				"commit-sha": "ad6b6c6523ee21cada11be5f7ea4d99abc530726"
-			},
-			"last-slds-markup-review": {
-				"date-iso-8601": "2018/01/18",
-				"commit-sha": "ad6b6c6523ee21cada11be5f7ea4d99abc530726"
-			},
-			"SLDS-component-path": "/components/split-view",
-			"dependencies": [
-				{
-					"component": "header",
-					"classKey": "SplitViewHeader"
-				},
-				{
-					"component": "listbox",
-					"classKey": "SplitViewListbox"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Base",
-					"path": "/__examples__/base.jsx"
-				},
-				{
-					"heading": "Multiple",
-					"path": "/__examples__/base-multiple.jsx"
-				},
-				{
-					"heading": "With External State",
-					"path": "/__examples__/external-state.jsx"
-				},
-				{
-					"heading": "Custom Items List",
-					"path": "/__examples__/custom-items-list.jsx"
-				}
-			],
-			"url-slug": "split-view"
 		},
 		{
 			"component": "tabs",
@@ -1738,20 +1343,6 @@
 				}
 			],
 			"url-slug": "textareas"
-		},
-		{
-			"component": "time-picker",
-			"status": "prod",
-			"display-name": "Timepickers",
-			"classKey": "TimePicker",
-			"SLDS-component-path": "/components/timepicker",
-			"site-stories": [
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				}
-			],
-			"url-slug": "timepickers"
 		},
 		{
 			"component": "toast",
@@ -1840,44 +1431,6 @@
 				}
 			],
 			"url-slug": "tree"
-		},
-		{
-			"component": "trial-bar",
-			"status": "prod",
-			"display-name": "Trial Bars",
-			"classKey": "TrialBar",
-			"SLDS-component-path": "/components/trial-bar",
-			"dependencies": [
-				{
-					"component": "button",
-					"classKey": "TrialBarButton"
-				},
-				{
-					"component": "dropdown",
-					"classKey": "TrialBarDropdown"
-				}
-			],
-			"site-stories": [
-				{
-					"heading": "Base",
-					"path": "/__examples__/default.jsx"
-				}
-			],
-			"url-slug": "trial-bars"
-		},
-		{
-			"component": "vertical-navigation",
-			"status": "prod",
-			"display-name": "Vertical Navigation",
-			"classKey": "VerticalNavigation",
-			"SLDS-component-path": "/components/vertical-navigation",
-			"site-stories": [
-				{
-					"heading": "Default",
-					"path": "/__examples__/default.jsx"
-				}
-			],
-			"url-slug": "vertical-navigation"
 		},
 		{
 			"component": "visual-picker",

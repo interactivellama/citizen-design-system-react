@@ -17,7 +17,6 @@ import DataTableHighlightCell from '../../data-table/highlight-cell';
 import Icon from '../../icon';
 
 import MediaObject from '../../media-object';
-import InlineEdit from '../../forms/input/inline';
 
 import RelatedListWithTable from '../__examples__/related-list-with-table';
 
@@ -182,24 +181,6 @@ storiesOf(CARD, module)
 	))
 	.add('w/ Items', () => <DemoCard items={sampleItems} />)
 	.add('Empty', () => <DemoCard items={[]} />)
-	.add('Custom Header', () => (
-		<DemoCard
-			header={
-				<MediaObject
-					body={
-						<InlineEdit
-							className="slds-text-heading_small slds-truncate"
-							name="inline-edit-standard"
-							value="Write your own heading"
-							id="inline-edit-standard"
-							silenceDeprecationWarning
-						/>
-					}
-				/>
-			}
-			items={sampleItems}
-		/>
-	))
 	.add('Custom Heading', () => (
 		<DemoCard
 			items={sampleItems}
